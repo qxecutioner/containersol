@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j/Hwt3pgDXU=",
+  "dgSpecHash": "FwG0VQ8t8cA=",
   "success": true,
-  "projectFilePath": "D:\\RnD\\k8s\\ContainerSolutions\\WebApplication4\\WebApplication4.csproj",
+  "projectFilePath": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\WebApplication4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jithi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\jithi\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
