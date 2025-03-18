@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build and Push Multi-Container Images
 
 on:
   push:
@@ -9,9 +9,15 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        app:
+          - WebApplication1
+          - WebApplication4
+
     steps:
-    # Checkout the code from the repository
-    - name: Checkout code
+    # Checkout the code
+    - name: Checkout Code
       uses: actions/checkout@v3
 
     # Log in to GitHub Container Registry
@@ -23,21 +29,11 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     # Build the Docker image
-    - name: Build Docker Image for webapp1
+    - name: Build Docker Image
       run: |
-        docker build -t ghcr.io/${{ github.repository_owner }}/webapp1:latest ./src/WebApplication1/
+        docker build -t ghcr.io/${{ github.repository_owner }}/${{ matrix.app }}:latest ./src/${{ matrix.app }}/
 
     # Push the Docker image
     - name: Push Docker Image
       run: |
-        docker push ghcr.io/${{ github.repository_owner }}/webapp1:latest
-
-    # Build the Docker image
-    - name: Build Docker Image for webapp2
-      run: |
-        docker build -t ghcr.io/${{ github.repository_owner }}/webapp2:latest ./src/WebApplication1/
-
-    # Push the Docker image
-    - name: Push Docker Image
-      run: |
-        docker push ghcr.io/${{ github.repository_owner }}/webapp2:latest
+        docker push ghcr.io/${{ github.repository_owner }}/${{ matrix.app }}:latest
