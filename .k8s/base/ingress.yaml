@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapi-ingress
+  namespace: dev
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: webapi.dev.example.com # Replace with your domain
+    http:
+      paths:
+      - path: /1
+        pathType: Prefix
+        backend:
+          service:
+            name: webapi
+            port:
+              number: 80
