@@ -1,0 +1,27 @@
+name: Deploy to Environments
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: [dev, staging, production]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build
+        uses: ./.github/workflows/build.yaml
+        secrets: inherit
+
+      # - name: Deploy to ${{ matrix.environment }}
+      #   uses: ./.github/workflows/reusable-deploy.yml
+      #   with:
+      #     environment: ${{ matrix.environment }}
+      #   secrets: inherit
