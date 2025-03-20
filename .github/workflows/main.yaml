@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
-        uses: ./.github/actions/build
+        uses: ./.github/workflows/build.yaml
         secrets: inherit
         with:
           app: ${{ matrix.app }}
