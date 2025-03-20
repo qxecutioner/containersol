@@ -23,11 +23,12 @@ jobs:
 
       - name: Build
         uses: ./.github/actions/build
+        secrets: inherit
         with:
           app: ${{ matrix.app }}
           actor: ${{ github.actor }}
           owner: $${{ github.repository_owner }}
-        secrets: inherit
+        
         
 
       # - name: Deploy to ${{ matrix.environment }}
