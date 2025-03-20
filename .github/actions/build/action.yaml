@@ -2,23 +2,22 @@ name: Build and Push Multi-Container Images
 
 on:
   workflow_call:
-# inputs:
-#   actor:
-#     required: true
-#   secrets:
-#     required: true
+inputs:
+  app:
+    required: true
+  actor:
+    required: true
+  owner:
+    required: true
+  secrets:
+    githubtoken:
+      required: true
 permissions:
   contents: read
   packages: write
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        app:
-          - WebApplication1
-          - WebApplication4
 
     steps:
     # Checkout the code
@@ -30,17 +29,17 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        username: ${{ inputs.actor }}
+        password: ${{ inputs.secrets.githubtoken }}
 
     # Build the Docker image
     - name: Build Docker Image
       run: |
-        APP_NAME_LOWERCASE=$(echo "${{ matrix.app }}" | tr '[:upper:]' '[:lower:]')
-        docker build -t ghcr.io/${{ github.repository_owner }}/$APP_NAME_LOWERCASE:latest -f ./src/${{ matrix.app }}/Dockerfile ./src
+        APP_NAME_LOWERCASE=$(echo "${{ inputs.app }}" | tr '[:upper:]' '[:lower:]')
+        docker build -t ghcr.io/${{ inputs.owner }}/$APP_NAME_LOWERCASE:latest -f ./src/${{ inputs.app }}/Dockerfile ./src
 
     # Push the Docker image
     - name: Push Docker Image
       run: |
-        APP_NAME_LOWERCASE=$(echo "${{ matrix.app }}" | tr '[:upper:]' '[:lower:]')
+        APP_NAME_LOWERCASE=$(echo "${{ inputs.app }}" | tr '[:upper:]' '[:lower:]')
         docker push ghcr.io/${{ github.repository_owner }}/$APP_NAME_LOWERCASE:latest

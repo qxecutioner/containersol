@@ -7,6 +7,12 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        app:
+          - WebApplication1
+          - WebApplication4
+
     runs-on: ubuntu-latest
     # strategy:
     #   matrix:
@@ -16,10 +22,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
-        uses: ./.github/workflows/build
-        # with:
-        #   actor: ${{ github.actor }}
-        #   secrets: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./.github/actions/build
+        with:
+          app: ${{ matrix.app }}
+          actor: ${{ github.actor }}
+          owner: $${{ github.repository_owner }}
+          secrets: ${{ secrets.GITHUB_TOKEN }}
         
 
       # - name: Deploy to ${{ matrix.environment }}
