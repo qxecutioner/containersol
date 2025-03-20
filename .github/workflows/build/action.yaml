@@ -2,6 +2,11 @@ name: Build and Push Multi-Container Images
 
 on:
   workflow_call:
+inputs:
+  actor:
+    required: true
+  secrets:
+    required: true
 permissions:
   contents: read
   packages: write
@@ -25,8 +30,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        username: {{ input.actor }}
+        password: {{ input.secrets }}
 
     # Build the Docker image
     - name: Build Docker Image
