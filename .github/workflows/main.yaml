@@ -27,7 +27,7 @@ jobs:
           app: ${{ matrix.app }}
           actor: ${{ github.actor }}
           owner: $${{ github.repository_owner }}
-          secrets: ${{ secrets.GITHUB_TOKEN }}
+        secrets: inherit
         
 
       # - name: Deploy to ${{ matrix.environment }}
