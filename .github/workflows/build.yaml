@@ -30,7 +30,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ inputs.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ inputs.secrets.githubtoken }}
 
     # Build the Docker image
     - name: Build Docker Image

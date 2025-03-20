@@ -23,11 +23,13 @@ jobs:
 
       - name: Build
         uses: ./.github/workflows/build.yaml
-        secrets: inherit
         with:
           app: ${{ matrix.app }}
           actor: ${{ github.actor }}
-          owner: $${{ github.repository_owner }}
+          owner: ${{ github.repository_owner }}
+          secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
         
         
 
