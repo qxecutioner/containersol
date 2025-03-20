@@ -13,7 +13,7 @@ jobs:
           - WebApplication1
           - WebApplication4
     uses: ./.github/workflows/build.yaml
-      
+    secrets: inherit
     with:
       app: ${{ matrix.app }}
       actor: ${{ github.actor }}
@@ -21,12 +21,3 @@ jobs:
         # secrets:
         #   githubtoken: ${{ secrets.GITHUB_TOKEN }}
           
-
-        
-        
-
-      # - name: Deploy to ${{ matrix.environment }}
-      #   uses: ./.github/workflows/reusable-deploy.yml
-      #   with:
-      #     environment: ${{ matrix.environment }}
-      #   secrets: inherit

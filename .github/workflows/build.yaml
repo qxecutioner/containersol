@@ -9,9 +9,7 @@ on:
         required: true
       owner:
         required: true
-    # secrets:
-    #   githubtoken:
-    #     required: true
+    
 permissions:
   contents: read
   packages: write
@@ -30,7 +28,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ inputs.actor }}
-        password: ${{ secrets.githubtoken }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
     # Build the Docker image
     - name: Build Docker Image
