@@ -28,8 +28,8 @@ jobs:
           app: ${{ matrix.app }}
           actor: ${{ github.actor }}
           owner: ${{ github.repository_owner }}
-          secrets:
-            githubtoken: ${{ secrets.GITHUB_TOKEN }}
+        secrets:
+          githubtoken: ${{ secrets.GITHUB_TOKEN }}
           
 
         
