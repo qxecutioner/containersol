@@ -7,13 +7,13 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        app:
-          - WebApplication1
-          - WebApplication4
+    # strategy:
+    #   matrix:
+    #     app:
+    #       - WebApplication1
+    #       - WebApplication4
 
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     # strategy:
     #   matrix:
     #     environment: [dev, staging, production]
@@ -21,13 +21,13 @@ jobs:
       # - name: Checkout code
       #   uses: actions/checkout@v3
 
-  name: Build
-  uses: ./.github/workflows/build.yaml
-  
-  with:
-    app: ${{ matrix.app }}
-    actor: ${{ github.actor }}
-    owner: ${{ github.repository_owner }}
+    #name: Build1
+    uses: ./.github/workflows/build.yaml
+    
+    with:
+      app: ${{ matrix.app }}
+      actor: ${{ github.actor }}
+      owner: ${{ github.repository_owner }}
         # secrets:
         #   githubtoken: ${{ secrets.GITHUB_TOKEN }}
           
