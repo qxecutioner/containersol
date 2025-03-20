@@ -9,11 +9,11 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
-    # strategy:
-    #   matrix:
-    #     app:
-    #       - WebApplication1
-    #       - WebApplication4
+    strategy:
+      matrix:
+        app:
+          - WebApplication1
+          - WebApplication4
 
     steps:
     # Checkout the code
