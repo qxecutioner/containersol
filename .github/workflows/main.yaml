@@ -7,7 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app:
+          - WebApplication1
+          - WebApplication4
     uses: ./.github/workflows/build.yaml
       
     with:
