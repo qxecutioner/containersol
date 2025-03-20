@@ -7,23 +7,9 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        app:
-          - WebApplication1
-          - WebApplication4
-
     runs-on: ubuntu-latest
-    # strategy:
-    #   matrix:
-    #     environment: [dev, staging, production]
-    #steps:
-      # - name: Checkout code
-      #   uses: actions/checkout@v3
-
-    #name: Build1
     uses: ./.github/workflows/build.yaml
-    
+      
     with:
       app: ${{ matrix.app }}
       actor: ${{ github.actor }}
