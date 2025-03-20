@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
-        uses: workflows/build.yaml@main
+        uses: workflows/build.yaml
         
         with:
           app: ${{ matrix.app }}
