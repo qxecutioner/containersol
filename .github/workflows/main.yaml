@@ -14,10 +14,10 @@ jobs:
           - WebApplication4
     uses: ./.github/workflows/build.yaml
     secrets: inherit
-    with:
-      app: ${{ matrix.app }}
-      actor: ${{ github.actor }}
-      owner: ${{ github.repository_owner }}
+    #with:
+      # app: ${{ matrix.app }}
+      # actor: ${{ github.actor }}
+      # owner: ${{ github.repository_owner }}
         # secrets:
         #   githubtoken: ${{ secrets.GITHUB_TOKEN }}
           

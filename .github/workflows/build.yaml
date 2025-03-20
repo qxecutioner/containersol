@@ -2,7 +2,13 @@ name: Build and Push Multi-Container Images
 
 on:
   workflow_call:
-    
+    # inputs:
+    #   app:
+    #     required: true
+    #   actor:
+    #     required: true
+    #   owner:
+    #     required: true
     
 permissions:
   contents: read
