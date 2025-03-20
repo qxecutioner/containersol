@@ -9,9 +9,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        environment: [dev, staging, production]
+    # strategy:
+    #   matrix:
+    #     environment: [dev, staging, production]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
