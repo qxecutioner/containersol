@@ -17,9 +17,9 @@ jobs:
 
       - name: Build
         uses: ./.github/workflows/build
-        with:
-          actor: ${{ github.actor }}
-          secrets: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   actor: ${{ github.actor }}
+        #   secrets: ${{ secrets.GITHUB_TOKEN }}
         
 
       # - name: Deploy to ${{ matrix.environment }}
