@@ -9,9 +9,9 @@ on:
         required: true
       owner:
         required: true
-    secrets:
-      githubtoken:
-        required: true
+    # secrets:
+    #   githubtoken:
+    #     required: true
 permissions:
   contents: read
   packages: write
