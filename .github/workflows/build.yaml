@@ -5,11 +5,13 @@ on:
     inputs:
       app:
         required: true
-    #   actor:
-    #     required: true
-    #   owner:
-    #     required: true
-    
+        type: string
+      actor:
+        required: true
+        type: string
+      owner:
+        required: true
+        type: string
 
 jobs:
   build-and-push:
