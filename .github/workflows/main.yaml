@@ -28,7 +28,7 @@ jobs:
           actor: ${{ github.actor }}
           owner: ${{ github.repository_owner }}
           secrets:
-            token: ${{ secrets.GITHUB_TOKEN }}
+            githubtoken: ${{ secrets.GITHUB_TOKEN }}
 
         
         
