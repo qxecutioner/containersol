@@ -23,12 +23,13 @@ jobs:
 
       - name: Build
         uses: ./.github/workflows/build.yaml
-        secrets:
-            githubtoken: ${{ secrets.GITHUB_TOKEN }}
+        
         with:
           app: ${{ matrix.app }}
           actor: ${{ github.actor }}
           owner: ${{ github.repository_owner }}
+          secrets:
+            githubtoken: ${{ secrets.GITHUB_TOKEN }}
           
 
         
