@@ -2,7 +2,7 @@ name: Build and Push Multi-Container Images
 
 on:
   workflow_call:
-    inputs:
+    
     
 permissions:
   contents: read
