@@ -21,13 +21,13 @@ jobs:
       # - name: Checkout code
       #   uses: actions/checkout@v3
 
-    name: Build
-    uses: ./.github/workflows/build.yaml
-    
-    with:
-      app: ${{ matrix.app }}
-      actor: ${{ github.actor }}
-      owner: ${{ github.repository_owner }}
+  name: Build
+  uses: ./.github/workflows/build.yaml
+  
+  with:
+    app: ${{ matrix.app }}
+    actor: ${{ github.actor }}
+    owner: ${{ github.repository_owner }}
         # secrets:
         #   githubtoken: ${{ secrets.GITHUB_TOKEN }}
           
