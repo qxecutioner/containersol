@@ -43,6 +43,15 @@ namespace WebApplication4.Controllers
         [HttpGet("data",Name = "GetData")]
         public async Task<TransferData> GetData()
         {
+            Console.WriteLine("inside data");
+
+            var res = Environment.GetEnvironmentVariables();
+
+            foreach (var key in res)
+            {
+                Console.WriteLine($"{key} - {res[key]}");
+            }
+
             return await _services.GetTransferData(_settings.UrlPath);
         }
         
