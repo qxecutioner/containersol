@@ -19,5 +19,3 @@ spec:
           image: ghcr.io/qxecutioner/webapplication1:latest
           ports:
             - containerPort: 80
-      imagePullSecrets:
-        - name: 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
