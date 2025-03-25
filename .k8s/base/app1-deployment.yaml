@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1-deployment
+  labels:
+    app: app1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app1
+  template:
+    metadata:
+      labels:
+        app: app1
+    spec:
+      containers:
+        - name: github-image-container
+          image: ghcr.io/qxecutioner/webapplication1:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: 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
