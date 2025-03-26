@@ -21,6 +21,8 @@ namespace WebApplication4.Services
             {
                 var contentBody = reader.ReadToEnd();
 
+                Console.WriteLine(contentBody);
+
                 return JsonSerializer.Deserialize<T>(contentBody);
             }
 
