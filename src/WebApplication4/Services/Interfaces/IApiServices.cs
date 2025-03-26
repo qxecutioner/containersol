@@ -2,8 +2,8 @@
 
 namespace WebApplication4.Services.Interfaces
 {
-    public interface IApiServices
+    public interface IApiServices<T>
     {
-        Task<TransferData> GetTransferData(string url);
+        Task<T> GetTransferData(string url);
     }
 }

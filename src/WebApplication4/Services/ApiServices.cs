@@ -5,11 +5,11 @@ using WebApplication4.Services.Interfaces;
 
 namespace WebApplication4.Services
 {
-    public class ApiServices(HttpClient httpClient) : IApiServices
+    public class ApiServices<T>(HttpClient httpClient) : IApiServices<T>
     {
         private readonly HttpClient _httpClient = httpClient;
 
-        public async Task<TransferData> GetTransferData(string url)
+        public async Task<T> GetTransferData(string url)
         {
             var response = await _httpClient.GetAsync(url);
 
@@ -17,7 +17,7 @@ namespace WebApplication4.Services
 
             var content = await response.Content.ReadAsStreamAsync();
 
-            return JsonSerializer.Deserialize<TransferData>(content);
+            return JsonSerializer.Deserialize<T>(content);
         }
     }
 }

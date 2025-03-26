@@ -5,8 +5,3 @@ resources:
   - ../../../base
 
 namePrefix: dev-
-
-configMapGenerator:
-  - name: environment-config
-    literals:
-      - SERVICE_PREFIX=dev

@@ -17,11 +17,6 @@ spec:
       containers:
         - name: github-image-container
           image: ghcr.io/qxecutioner/webapplication4:latest
-          env:
-            - name: SERVICE_PREFIX
-              valueFrom:
-                configMapKeyRef:
-                  name: environment-config
-                  key: SERVICE_PREFIX
+         
           ports:
             - containerPort: 80

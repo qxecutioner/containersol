@@ -17,11 +17,11 @@ namespace WebApplication4.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        private readonly IApiServices _services;
+        private readonly IApiServices<WeatherForecast> _services;
 
         private readonly AppSettings _settings;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices apiServices, IOptions<AppSettings> settings)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices<WeatherForecast> apiServices, IOptions<AppSettings> settings)
         {
             _logger = logger;
             _services = apiServices;
@@ -41,7 +41,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpGet("data",Name = "GetData")]
-        public async Task<TransferData> GetData()
+        public async Task<WeatherForecast> GetData()
         {
             Console.WriteLine("inside data");
 
@@ -52,12 +52,7 @@ namespace WebApplication4.Controllers
                 Console.WriteLine($"{key} - {res[key]}");
             }
 
-            string host = $"{res["SERVICE_PREFIX"]}_APP1_SERVICE_SERVICE_HOST";
-            string port = $"{res["SERVICE_PREFIX"]}_APP1_SERVICE_SERVICE_PORT";
-
-            string url = $"http://{host}:{port}/WeatherForecast";
-
-            return await _services.GetTransferData(url);
+            return await _services.GetTransferData("https://dev-app1-service/WeatherForecast");
         }
         
     }
