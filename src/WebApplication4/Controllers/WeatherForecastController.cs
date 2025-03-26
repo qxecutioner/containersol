@@ -41,7 +41,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpGet("data",Name = "GetData")]
-        public async Task<TransferData> GetData()
+        public async Task<List<TransferData>> GetData()
         {
             Console.WriteLine("inside data");
 

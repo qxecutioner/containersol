@@ -1,7 +1,10 @@
-﻿namespace WebApplication4.Models
+﻿using System.Text.Json.Serialization;
+
+namespace WebApplication4.Models
 {
     public class TransferData
     {
+        [JsonPropertyName(nameof(Date))]
         public string Date { get; set; }
 
         public int TemperatureC { get; set; }
