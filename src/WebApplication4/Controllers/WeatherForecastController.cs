@@ -52,7 +52,7 @@ namespace WebApplication4.Controllers
                 Console.WriteLine($"{key} - {res[key]}");
             }
 
-            return await _services.GetTransferData("https://dev-app1-service/WeatherForecast");
+            return await _services.GetTransferData("https://dev-app1-service:8080/WeatherForecast");
         }
         
     }
