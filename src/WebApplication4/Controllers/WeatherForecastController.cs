@@ -17,11 +17,11 @@ namespace WebApplication4.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        private readonly IApiServices<WeatherForecast> _services;
+        private readonly IApiServices<TransferData> _services;
 
         private readonly AppSettings _settings;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices<WeatherForecast> apiServices, IOptions<AppSettings> settings)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices<TransferData> apiServices, IOptions<AppSettings> settings)
         {
             _logger = logger;
             _services = apiServices;
@@ -41,7 +41,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpGet("data",Name = "GetData")]
-        public async Task<WeatherForecast> GetData()
+        public async Task<TransferData> GetData()
         {
             Console.WriteLine("inside data");
 

@@ -2,6 +2,7 @@ using Polly;
 using WebApplication1.Extensions;
 using WebApplication1.Models;
 using WebApplication4;
+using WebApplication4.Models;
 using WebApplication4.Services;
 using WebApplication4.Services.Interfaces;
 
@@ -16,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOption<AppSettings>();
 
-builder.Services.AddHttpClient<IApiServices<WeatherForecast>, ApiServices<WeatherForecast>>(client =>
+builder.Services.AddHttpClient<IApiServices<TransferData>, ApiServices<TransferData>>(client =>
 {
     
     client.DefaultRequestHeaders.Add("Accept", "application/json");
