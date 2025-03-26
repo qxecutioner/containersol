@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOption<AppSettings>();
 
-builder.Services.AddHttpClient<IApiServices<TransferData>, ApiServices<TransferData>>(client =>
+builder.Services.AddHttpClient<IApiServices<List<TransferData>>, ApiServices<List<TransferData>>>(client =>
 {
     
     client.DefaultRequestHeaders.Add("Accept", "application/json");

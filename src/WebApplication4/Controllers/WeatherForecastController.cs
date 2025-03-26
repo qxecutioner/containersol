@@ -17,11 +17,11 @@ namespace WebApplication4.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        private readonly IApiServices<TransferData> _services;
+        private readonly IApiServices<List<TransferData>> _services;
 
         private readonly AppSettings _settings;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices<TransferData> apiServices, IOptions<AppSettings> settings)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IApiServices<List<TransferData>> apiServices, IOptions<AppSettings> settings)
         {
             _logger = logger;
             _services = apiServices;
