@@ -17,9 +17,13 @@ namespace WebApplication4.Services
 
             var content = await response.Content.ReadAsStreamAsync();
 
-            Console.WriteLine($"Content: {content}");
+            using (var reader = new StreamReader(content))
+            {
+                var contentBody = reader.ReadToEnd();
 
-            return JsonSerializer.Deserialize<T>(content);
+                return JsonSerializer.Deserialize<T>(contentBody);
+            }
+
         }
     }
 }
