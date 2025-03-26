@@ -52,7 +52,12 @@ namespace WebApplication4.Controllers
                 Console.WriteLine($"{key} - {res[key]}");
             }
 
-            return await _services.GetTransferData(_settings.UrlPath);
+            string host = $"{res["SERVICE_PREFIX"]}_APP1_SERVICE_SERVICE_HOST";
+            string port = $"{res["SERVICE_PREFIX"]}_APP1_SERVICE_SERVICE_PORT";
+
+            string url = $"http://{host}:{port}/WeatherForecast";
+
+            return await _services.GetTransferData(url);
         }
         
     }

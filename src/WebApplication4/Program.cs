@@ -17,7 +17,7 @@ builder.Services.AddOption<AppSettings>();
 
 builder.Services.AddHttpClient<IApiServices, ApiServices>(client =>
 {
-    //client.BaseAddress = new Uri("https://api.example.com");
+    client.BaseAddress = new Uri("https://api.example.com");
     client.DefaultRequestHeaders.Add("Accept", "application/json");
     client.Timeout = TimeSpan.FromSeconds(30);
 })
