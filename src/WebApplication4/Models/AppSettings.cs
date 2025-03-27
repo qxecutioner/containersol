@@ -2,7 +2,7 @@
 {
     public class AppSettings : Options
     {
-        public string UrlPath { get; set; }
+        public string App1_Service { get; set; }
 
         public override string OptionsName => "AppSettings";
     }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using WebApplication1.Models;
 using Newtonsoft.Json;
 using WebApplication1;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication1.Controllers
 {
@@ -25,6 +26,7 @@ namespace WebApplication1.Controllers
             _appSettings = settings.Value;
         }
 
+        [Authorize]
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {

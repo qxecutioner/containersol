@@ -43,16 +43,9 @@ namespace WebApplication4.Controllers
         [HttpGet("data",Name = "GetData")]
         public async Task<List<TransferData>> GetData()
         {
-            Console.WriteLine("inside data");
+            
 
-            var res = Environment.GetEnvironmentVariables();
-
-            foreach (var key in res)
-            {
-                Console.WriteLine($"{key} - {res[key]}");
-            }
-
-            return await _services.GetTransferData("http://dev-app1-service:8080/WeatherForecast");
+            return await _services.GetTransferData($"{_settings.App1_Service}/WeatherForecast");
         }
         
     }
