@@ -1,12 +1,15 @@
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using KafkaBatchConsumerApp.Services;
+using Microsoft.Extensions.Configuration;
+using KafkaBatchConsumerApp;
 
-namespace WorkerService1
+
+public class Program
 {
-    public class Program
+    public async static Task Main(string[] args)
     {
-        public async static void Main(string[] args)
-        {
-            IHost host = Host.CreateDefaultBuilder(args)
+        IHost host = Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration((hostingContext, config) =>
             {
                 config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
@@ -20,7 +23,6 @@ namespace WorkerService1
             })
             .Build();
 
-            await host.RunAsync();
-        }
+        await host.RunAsync();
     }
 }
