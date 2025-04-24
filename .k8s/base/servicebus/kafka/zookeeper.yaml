@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: zookeeper
+spec:
+  serviceName: zookeeper-service
+  replicas: 3
+  selector:
+    matchLabels:
+      app: zookeeper
+  template:
+    metadata:
+      labels:
+        app: zookeeper
+    spec:
+      containers:
+        - name: zookeeper
+          image: confluentinc/cp-zookeeper:7.5.3 # Use a stable version
+          ports:
+            - containerPort: 2181
+              name: client
+            - containerPort: 2888
+              name: server
+            - containerPort: 3888
+              name: leader-election
+          env:
+            - name: ZOOKEEPER_SERVER_ID
+              value: "1" # Will be overridden by init container
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: ZOOKEEPER_SERVERS
+              value: ""
+            - name: ZOOKEEPER_CLIENT_PORT
+              value: "2181"
+          securityContext:
+            runAsUser: 1000
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/zookeeper/data
+            - name: datalog
+              mountPath: /var/lib/zookeeper/datalog
+      initContainers:
+        - name: init-zookeeper-id
+          image: busybox:latest
+          command:
+            - sh
+            - -c
+            - |
+              NAMESPACE=$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)
+              SERVICE_NAME="zookeeper-service"
+
+              chown -R 1000:1000 /var/lib/zookeeper/data
+              SERVER_ID=$((1 + $(hostname | sed -e 's/zookeeper-//')))
+              echo "$SERVER_ID" > /var/lib/zookeeper/data/myid
+
+              SERVERS=""
+              for i in $(seq 0 $((${#replicas} - 1))); do
+                SERVERS="$SERVERS server.$((i + 1))=${SERVICE_NAME}-$i.${SERVICE_NAME}.$NAMESPACE.svc.cluster.local:2888:3888 "
+              done
+              echo "export ZOOKEEPER_SERVERS=\"$SERVERS\"" > /etc/environment
+          env:
+            - name: replicas
+              value: "3"
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/zookeeper/data
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi # Adjust as needed
+    - metadata:
+        name: datalog
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi # Adjust as needed
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zookeeper-service
+spec:
+  selector:
+    app: zookeeper
+  ports:
+    - name: client
+      port: 2181
+      targetPort: 2181

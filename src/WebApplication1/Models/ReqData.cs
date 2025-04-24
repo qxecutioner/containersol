@@ -1,5 +1,5 @@
 ﻿
-namespace WebApplication1.Models
+namespace WebApplication4.Models
 {
     public class ReqData
     {

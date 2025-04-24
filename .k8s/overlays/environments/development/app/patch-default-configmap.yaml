@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app4-configmap
+data:
+  APP1_SERVICE: "http://dev-app1-service:8080/"
+  REDIS_PASSWORD: "test123"

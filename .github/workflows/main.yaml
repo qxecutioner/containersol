@@ -14,6 +14,7 @@ jobs:
         app:
           - WebApplication1
           - WebApplication4
+          - WorkerService1
     uses: ./.github/workflows/build.yaml
     secrets: inherit
     with:

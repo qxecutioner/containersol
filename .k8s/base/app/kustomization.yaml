@@ -8,3 +8,5 @@ resources:
   - app4-deployment.yaml
   - app1-service.yaml
   - app4-service.yaml
+  - redis-deployment.yaml
+  - redis-service.yaml

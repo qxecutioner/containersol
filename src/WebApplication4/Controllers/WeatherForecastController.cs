@@ -1,11 +1,13 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using WebApplication1.Models;
+using WebApplication4.Models;
 using WebApplication4.Models;
 using WebApplication4.Services.Interfaces;
 
 namespace WebApplication4.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -31,8 +33,11 @@ namespace WebApplication4.Controllers
         [HttpGet("weather",Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+             var username = HttpContext.Session.GetString(nameof(Login.Username));
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
+                Username=username,
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]

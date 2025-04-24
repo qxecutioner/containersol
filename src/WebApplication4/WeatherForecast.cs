@@ -2,6 +2,8 @@ namespace WebApplication4
 {
     public class WeatherForecast
     {
+        public string Username { get; set; }
+
         public DateOnly Date { get; set; }
 
         public int TemperatureC { get; set; }

@@ -3,16 +3,68 @@
   "WorkspaceRootPath": "D:\\RnD\\k8s\\ContainerSolutions\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\workerservice1\\service\\kafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|solutionrelative:workerservice1\\service\\kafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\workerservice1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|solutionrelative:workerservice1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\workerservice1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|solutionrelative:workerservice1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\workerservice1\\service\\ikafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9A2F74-7EE9-4544-800A-EBE4F2BAC6B4}|WorkerService1\\WorkerService1.csproj|solutionrelative:workerservice1\\service\\ikafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\models\\azuread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\models\\azuread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\models\\transferdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\services\\interfaces\\iapiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\services\\interfaces\\iapiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication4\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEA80EBB-E1C6-4944-9403-C905419A49E8}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26A432D7-F7BD-4D4B-ACD2-E329E1AA1C4B}|WebApplication1\\WebApplication1.csproj|d:\\rnd\\k8s\\containersolutions\\src\\webapplication1\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,59 +110,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WebApplication4\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkerService1\\appsettings.json",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\appsettings.json",
+              "RelativeToolTip": "WorkerService1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T12:33:03.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KafkaConsumerService.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Service\\KafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "WorkerService1\\Service\\KafkaConsumerService.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Service\\KafkaConsumerService.cs",
+              "RelativeToolTip": "WorkerService1\\Service\\KafkaConsumerService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAIAwwFQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:47:56.723Z",
+              "WhenOpened": "2025-04-24T12:29:01.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IKafkaConsumerService.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Service\\IKafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "WorkerService1\\Service\\IKafkaConsumerService.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Service\\IKafkaConsumerService.cs",
+              "RelativeToolTip": "WorkerService1\\Service\\IKafkaConsumerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:28:37.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Program.cs",
+              "RelativeDocumentMoniker": "WorkerService1\\Program.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WorkerService1\\Program.cs",
+              "RelativeToolTip": "WorkerService1\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAhwAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T10:34:22.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication4\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication4\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-23T11:50:09.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AppSettings.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Models\\AppSettings.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AppSettings.cs",
+              "RelativeToolTip": "WebApplication4\\Models\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T07:43:19.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Program.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Program.cs",
+              "RelativeToolTip": "WebApplication4\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAswDkAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T13:00:45.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA6wCYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:37:53.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication4\\appsettings.json",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\appsettings.json",
+              "RelativeToolTip": "WebApplication4\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAgAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-02T14:21:31.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T09:27:48.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAABuAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T11:57:16.384Z",
+              "WhenOpened": "2025-03-17T13:47:56.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Program.cs",
-              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Program.cs",
-              "RelativeToolTip": "WebApplication4\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABfAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AzureAd.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AzureAd.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Models\\AzureAd.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AzureAd.cs",
+              "RelativeToolTip": "WebApplication4\\Models\\AzureAd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:35:42.371Z",
+              "WhenOpened": "2025-04-09T12:57:30.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TransferData.cs",
-              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\TransferData.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Models\\TransferData.cs",
-              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\TransferData.cs*",
-              "RelativeToolTip": "WebApplication4\\Models\\TransferData.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:34:10.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "ApiServices.cs",
               "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Services\\ApiServices.cs",
               "RelativeDocumentMoniker": "WebApplication4\\Services\\ApiServices.cs",
@@ -131,7 +279,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Models\\Login.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\Login.cs",
+              "RelativeToolTip": "WebApplication4\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:48:16.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwBwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:57:16.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TransferData.cs",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\TransferData.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Models\\TransferData.cs",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\TransferData.cs",
+              "RelativeToolTip": "WebApplication4\\Models\\TransferData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:34:10.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T09:22:30.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "IApiServices.cs",
               "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Services\\Interfaces\\IApiServices.cs",
               "RelativeDocumentMoniker": "WebApplication4\\Services\\Interfaces\\IApiServices.cs",
@@ -144,19 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AppSettings.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Models\\AppSettings.cs",
-              "ToolTip": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication4\\Models\\AppSettings.cs",
-              "RelativeToolTip": "WebApplication4\\Models\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:50:16.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\RnD\\k8s\\ContainerSolutions\\src\\WebApplication1\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WebApplication1\\WeatherForecast.cs",
@@ -164,7 +352,8 @@
               "RelativeToolTip": "WebApplication1\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:08:16.595Z"
+              "WhenOpened": "2025-03-17T13:08:16.595Z",
+              "EditorCaption": ""
             }
           ]
         }

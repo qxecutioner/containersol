@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app4-configmap
+data:
+  APP1_SERVICE: ""
+  REDIS_PASSWORD: ""

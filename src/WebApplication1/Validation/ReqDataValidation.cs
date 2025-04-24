@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using WebApplication1.Models;
+using WebApplication4.Models;
 
-namespace WebApplication1.Validation
+namespace WebApplication4.Validation
 {
     public class ReqDataValidation : AbstractValidator<ReqData>
     {
